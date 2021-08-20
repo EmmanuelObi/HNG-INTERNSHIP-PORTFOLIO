@@ -290,6 +290,9 @@ body {
   #about {
     height: 160vh;
   }
+  #connect .col-md-6 .icon {
+    font-size: 12px;
+  }
 }
 @media only screen and (max-width: 380px) {
   #about {
