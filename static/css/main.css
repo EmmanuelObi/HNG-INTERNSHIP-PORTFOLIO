@@ -101,6 +101,17 @@ body {
   height: 70px;
   padding: 20px 20px;
   cursor: pointer;
+  outline: none;
+  border: none;
+  border-radius: 40px;
+  transition: all 300ms linear;
+}
+#welcome .row .col-md-10 .my-button:hover {
+  background: none;
+  border: 2px solid #e24d5c;
+}
+#welcome .row .col-md-10 .my-button:hover a {
+  color: #e24d5c;
 }
 #welcome .row .col-md-10 .my-button a {
   text-decoration: none;
@@ -178,6 +189,14 @@ body {
   color:#e24d5c;
   text-decoration: none;
 }
+/* #volunteering {
+  padding: 6em 4em 3em;
+} */
+/* #volunteering .teaching-domains {
+	height: 500px;
+	width: auto;
+	margin-top: -4em;
+} */
 #connect {
   margin-top: 15vh;
   height: 100vh;
@@ -281,11 +300,11 @@ body {
     font-size: 42px;
   }
   #welcome .row p {
-    width: 80%;
+    width: 90%;
   }
-  #welcome .my-button {
+  #welcome .row .col-md-10 .my-button { 
+    width: 40%;
     margin: 0 auto;
-    border-radius: 10px;
   }
   #about {
     height: 160vh;
@@ -293,13 +312,27 @@ body {
   #connect .col-md-6 .icon {
     font-size: 12px;
   }
+  #skills {
+    height: 360vh;
+  }
 }
 @media only screen and (max-width: 380px) {
   #about {
-    height: 220vh;
+    height: 190vh;
   }
   #welcome .row .col-md-10 .my-button  {
     width: 50%;
 
+  }
+  #skills {
+    height: 360vh;
+  }
+}
+@media only screen and (max-width: 330px) {
+  #about {
+    height: 230vh;
+  }
+  #skills {
+    height: 350vh;
   }
 }
